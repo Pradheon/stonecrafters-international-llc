@@ -54,12 +54,12 @@ h2 {
 }
 
 .hero {
-    height: 55vh;
-    background-image: url();
+    min-height: 55vh;
+    background-image: url("../img/unsplash/kenny-eliason-mGZX2MOPR-s-unsplash.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 0px 10px 5px rgba(0,0,0,.06);
+    box-shadow: inset 0px 100em rgba(0, 0, 0, 0.26), 0px 10px 5px rgba(0,0,0,.06);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,12 +82,46 @@ h2 {
     border: 1px solid #eee;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 100em rgba(0, 0, 0, 0.26)
+}
+
+.card.kitchen {
+    background-image: url("../img/unsplash/sidekix-media-oCw5_evbWyI-unsplash.jpg");
+}
+
+.card.bath {
+    background-image: url("../img/unsplash/sidekix-media-g51F6-WYzyU-unsplash.jpg");
+}
+
+.card.countertops {
+    background-image: url("../img/unsplash/callum-hill-L7V4rwETDb0-unsplash.jpg");
+}
+
+.card.flooring {
+    background-image: url("../img/unsplash/ralph-darabos-ccydTEH5x7E-unsplash.jpg");
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.photos .gallery-img {
+    max-width: 350px;
+    min-width: 50px;
 }
 
 .testimonial-container {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 16px;
 }
 
 .testimonial {
@@ -113,22 +147,34 @@ h2 {
 .testimonial .testimonial-img {
     max-width: 80px;
     border-radius: 50%;
+    border: 1px solid #eee;
 }
 
 .contact-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .map {
     padding: 16px;
 }
 
-.information {
+.info {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 16px;
+    min-width: 200px;
+}
+
+.info-img {
+    max-width: 80px;
+    border: 1px solid #eee;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border-radius: 25px;
 }
 
 .footer .links, .footer a {
