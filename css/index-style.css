@@ -25,8 +25,12 @@ a {
 }
 
 h2 {
-    padding: 16px;
-    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 42px;
 }
 
 .header {
@@ -36,6 +40,25 @@ h2 {
     padding: 16px;
     background-color: rgba(255, 228, 196, 0.772);
     box-shadow: 0px 10px 5px rgba(0,0,0,.06);
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: #FC0 1px 0 10px;
+}
+
+.hero-text h1 {
+    font-size: 72px;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 36px;
+    margin-top: 10px;
 }
 
 .header a:hover {
@@ -56,6 +79,20 @@ h2 {
     display: flex;
     flex: 1;
     flex-direction: column;
+}
+
+.products, .gallery, .testimonials, .contact {
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.border {
+    min-height: 10vh;
+    background-image: url("../img/unsplash/spacejoy-9M66C_w_ToM-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 100em rgba(0, 0, 0, 0.26), 0px 10px 5px rgba(0,0,0,.06);
 }
 
 .links ul {
@@ -95,7 +132,11 @@ h2 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: inset 0px 100em rgba(0, 0, 0, 0.26)
+    box-shadow: inset 0px 100em rgba(0, 0, 0, 0.26);
+    font-size: 32px;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: #FC0 1px 0 10px;
 }
 
 .card.kitchen {
@@ -127,6 +168,10 @@ h2 {
     border: 1px solid #eee;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     border-radius: 25px;
+}
+
+.testimonials {
+    background-color: antiquewhite;
 }
 
 .testimonial-container {
