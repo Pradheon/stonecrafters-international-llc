@@ -65,7 +65,7 @@ h2 {
 
 .hero {
     min-height: 55vh;
-    background-image: url("img/unsplash/kenny-eliason-mGZX2MOPR-s-unsplash.jpg");
+    background-image: url("../img/unsplash/kenny-eliason-mGZX2MOPR-s-unsplash.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -99,19 +99,19 @@ h2 {
 }
 
 .card.kitchen {
-    background-image: url("img/unsplash/sidekix-media-oCw5_evbWyI-unsplash.jpg");
+    background-image: url("../img/unsplash/sidekix-media-oCw5_evbWyI-unsplash.jpg");
 }
 
 .card.bath {
-    background-image: url("img/unsplash/sidekix-media-g51F6-WYzyU-unsplash.jpg");
+    background-image: url("../img/unsplash/sidekix-media-g51F6-WYzyU-unsplash.jpg");
 }
 
 .card.countertops {
-    background-image: url("img/unsplash/callum-hill-L7V4rwETDb0-unsplash.jpg");
+    background-image: url("../img/unsplash/callum-hill-L7V4rwETDb0-unsplash.jpg");
 }
 
 .card.flooring {
-    background-image: url("img/unsplash/ralph-darabos-ccydTEH5x7E-unsplash.jpg");
+    background-image: url("../img/unsplash/ralph-darabos-ccydTEH5x7E-unsplash.jpg");
 }
 
 .photos {
