@@ -44,6 +44,10 @@ body {
     margin: auto auto auto 15%;
 }
 
+.global-nav .nav-logo span {
+    color: #fff;
+}
+
 .global-nav .menu-wrapper {
     margin: auto 15% auto auto;
 }
