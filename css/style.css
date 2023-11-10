@@ -42,6 +42,14 @@ body {
 
 .global-nav .nav-logo {
     margin: auto auto auto 15%;
+    width: auto;
+    height: 44px;
+}
+
+.global-nav .nav-logo img {
+    width: inherit;
+    height: inherit;
+    object-fit: contain;
 }
 
 .global-nav .nav-logo span {
@@ -170,6 +178,15 @@ body {
     text-shadow: 2px 2px 6px rgba(51,51,51,.6);
 }
 
+/*
+.hero-content img {
+    width: 252px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+*/
+
 .hero-content h1 {
     font-size: 40px;
     font-weight: 700;
@@ -227,6 +244,32 @@ body {
     height: 400px;
     border: 2px solid orange;
     border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.products .container .card::before {
+    /* Additional layer to create the background effect */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1); /* Initial scale */
+    transition: transform 0.3s ease-in-out; /* Apply the transition to the pseudo-element */
+}
+
+.products .container .card:hover::before {
+    /* Scale up the background image on hover */
+    transform: scale(1.1);
+}
+
+.products .container .card-content {
+    position: relative;
+    z-index: 1; /* Ensure the text is above the scaled image */
     /* font */
     color: #fff;
     font-size: 64px;
@@ -234,26 +277,22 @@ body {
     text-shadow: 2px 2px 6px rgba(51,51,51,.6);
 }
 
-.kitchen-card {
-    background: url("/img/unsplash/sidekix-media-oCw5_evbWyI-unsplash.jpg") center no-repeat;
+/* Apply background images to the pseudo-element */
+.kitchen-card::before {
+    background-image: url("/img/unsplash/sidekix-media-oCw5_evbWyI-unsplash.jpg");
 }
 
-.bath-card {
-    background: url("/img/unsplash/sidekix-media-g51F6-WYzyU-unsplash.jpg") center no-repeat;
+.bath-card::before {
+    background-image: url("/img/unsplash/sidekix-media-g51F6-WYzyU-unsplash.jpg");
 }
 
-.countertops-card {
-    background: url("/img/unsplash/christian-mackie-cc0Gg3BegjE-unsplash.jpg") center no-repeat;
+.countertops-card::before {
+    background-image: url("/img/unsplash/christian-mackie-cc0Gg3BegjE-unsplash.jpg");
 }
 
-.flooring-card {
-    background: url("/img/unsplash/ralph-darabos-ccydTEH5x7E-unsplash.jpg") center no-repeat;
+.flooring-card::before {
+    background-image: url("/img/unsplash/ralph-darabos-ccydTEH5x7E-unsplash.jpg");
 }
-
-.kitchen-card, .bath-card, .countertops-card, .flooring-card {
-    background-size: cover;
-}
-
 
 /* ********************************************
             Block Content 
@@ -332,6 +371,12 @@ body {
 
 .footer .links a:hover {
     text-decoration: underline;
+}
+
+.footer .footer-logo {
+    width: auto;
+    height: 44px;
+    object-fit: contain;
 }
 
 .main-footer-content .link-wrapper-lr-10n {
