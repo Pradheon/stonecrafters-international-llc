@@ -233,6 +233,7 @@ hr {
     margin-left: 1px;
     width: 40px;
     height: 40px;
+    filter: drop-shadow(2px 2px 6px rgba(51,51,51,.6));
 }
 
 .scroll .line {
@@ -240,6 +241,7 @@ hr {
     margin-top: 0.2rem;
     width: 2px;
     height: 100%;
+    filter: drop-shadow(2px 2px 6px rgba(51,51,51,.6));
 }
 
 .scroll .line::after {
