@@ -314,6 +314,10 @@ hr {
     position: relative;
 }
 
+.card {
+    text-decoration: none;
+}
+
 .products .container .card::before {
     /* Additional layer to create the background effect */
     content: "";
