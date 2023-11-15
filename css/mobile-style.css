@@ -1,0 +1,111 @@
+/* ********************************************
+            Mobile Responsive 
+******************************************** */
+.expand, .collapse {
+    display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+    .global-nav .nav-logo {
+        position: absolute;
+        top: 0.8rem;
+        left: 0.5rem;
+        margin-left: 0;
+        height: 34px;
+    }
+
+    .expand {
+        position: absolute;
+        color: #fff;
+        top: 0.6rem;
+        right: 0.5rem;
+    }
+
+    .expand {
+        width: 40px;
+        height: 40px;
+    }
+
+    .collapse {
+        display: none;
+    }
+
+    .hero-content {
+        top: 30%;
+        width: 90%;
+    }
+
+    .hero-content h1 {
+        font-size: 25px;
+    }
+
+    .hero-content p {
+        font-size: 54px;
+    }
+
+    .hero-content a {
+        font-size: 18px;
+        width: 200px;
+    }
+
+    .scroll {
+        left: 48vw;
+    }
+
+    .products {
+        margin: 50px 10px 100px 10px;
+    }
+
+    .products .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 42rem;
+    }
+
+    .products .container .card {
+        width: 100%;
+        height: 150px;
+    }
+
+    .products .container .card-content {
+        font-size: 54px;
+    }
+
+    .testimonials .container {
+        width: 100vw;
+    }
+
+    .contact .content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contact .links {
+        gap: 100px;
+    }
+
+    .map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 250px;
+        margin-top: 50px;
+    }
+
+    .map iframe {
+        width: 95%;
+    }
+
+    .aside {
+        position: absolute;
+        display: flex;
+        bottom: 0.5rem;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+}

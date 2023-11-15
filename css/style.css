@@ -22,6 +22,12 @@ hr {
     background: #1F2937;
     color: #E5E7EB;
 }
+
+.dark-mode-yelp {
+    background-color: #1F2937 !important;
+    color: #E5E7EB !important;
+}
+
 /* ********************************************
         Global Navigation Content 
 ******************************************** */
@@ -416,7 +422,7 @@ hr {
     margin-bottom: 40px;
 }
 
-.contact .content {
+.contact .content, .contact .links {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -525,7 +531,7 @@ hr {
 
 .aside {
     position: absolute;
-    top: 70px;
+    bottom: 40%;
     right: 70px;
     flex-shrink: 0;
 }
@@ -676,3 +682,4 @@ hr {
 .specialties-statement p b {
     color: darkorange;
 }
+
