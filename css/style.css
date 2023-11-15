@@ -52,7 +52,7 @@ hr {
 }
 
 .global-nav .nav-logo {
-    margin: auto auto auto 15%;
+    margin: 7px auto auto 5%;
     width: auto;
     height: 44px;
 }
@@ -68,7 +68,7 @@ hr {
 }
 
 .global-nav .menu-wrapper {
-    margin: auto 15% auto auto;
+    margin: auto 5% auto auto;
 }
 
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
@@ -306,8 +306,8 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border: 2px solid orange;
     border-radius: 12px;
     overflow: hidden;
@@ -338,7 +338,7 @@ hr {
     z-index: 1; /* Ensure the text is above the scaled image */
     /* font */
     color: #fff;
-    font-size: 64px;
+    font-size: 44px;
     font-weight: 700;
     text-shadow: 2px 2px 6px rgba(51,51,51,.6);
 }
@@ -398,7 +398,7 @@ hr {
     align-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 70%;
+    width: 100%;
 }
 
 .yelp-review {
@@ -431,7 +431,7 @@ hr {
 
 .map {
     width: 700px;
-    height: 650px
+    height: 500px
 }
 
 .map iframe {

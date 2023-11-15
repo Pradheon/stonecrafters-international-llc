@@ -23,6 +23,7 @@
     }
     
     .expand, .collapse {
+        display: block;
         position: absolute;
         color: #fff;
         top: 0.6rem;

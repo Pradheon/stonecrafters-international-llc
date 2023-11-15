@@ -5,11 +5,11 @@ function toggleMenu() {
   let collapse = document.getElementById("collapse");
 
   if (links.style.display === "flex") {
-    navMenu.style.background = "rgba(0, 0, 0, 1.0)";
     links.style.display = "none";
     expand.style.display = "block";
     collapse.style.display = "none";
   } else {
+    navMenu.style.background = "rgba(0, 0, 0, 1.0)";
     links.style.display = "flex";
     links.style.flexDirection = "column";
     links.style.alignItems = "center";
