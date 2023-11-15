@@ -8,14 +8,13 @@
 @media screen and (max-width: 800px) {
     .global-nav .nav-logo {
         position: absolute;
-        top: 0.8rem;
+        top: 0.5rem;
         left: 0.5rem;
         margin-left: 0;
         height: 34px;
     }
 
     #nav-items {
-        border: red solid;
         display: none;
         width: 100vw;
         height: 100vh;
